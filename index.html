@@ -273,6 +273,9 @@
                     <li class="lesson-item" onclick="cambiarClase('Módulo 2 / Modelos de Entrada', '3. MODELO DE ENTRADA 3', 'jprDazPkOhg', this)">
                         <span>▶</span> 3. MODELO DE ENTRADA 3
                     </li>
+                    <li class="lesson-item" onclick="cambiarClase('Módulo 2 / Modelos de Entrada', '4. Backtesting Tradingview pasando prueba de fondeo', 'GYmtjEkLg2Y', this)">
+                        <span>▶</span> 4. Backtesting Tradingview pasando prueba de fondeo
+                    </li>
                 </ul>
             </div>
 
@@ -283,51 +286,32 @@
                     <li class="lesson-item" onclick="cambiarClase('Módulo 3 / Casos Prácticos', '1. CASO PRACTICO 1', '3F117JPz1A4', this)">
                         <span>▶</span> 1. CASO PRACTICO 1
                     </li>
-                    <li class="lesson-item" onclick="cambiarClase('Módulo 3 / Casos Prácticos', '2. Caso practico 05_10_26', 'iHlDHuYNO6A', this)">
-                        <span>▶</span> 2. Caso practico 05_10_26
+                    <li class="lesson-item" onclick="cambiarClase('Módulo 3 / Casos Prácticos', '2. Operativa 05_10_26', 'iHlDHuYNO6A', this)">
+                        <span>▶</span> 2. Operativa 05_10_26
                     </li>
-                    <li class="lesson-item" onclick="cambiarClase('Módulo 3 / Casos Prácticos', '3. Caso practico modelo 2 05_10_26', 'evB7Dc-GAP8', this)">
-                        <span>▶</span> 3. Caso practico modelo 2 05_10_26
+                    <li class="lesson-item" onclick="cambiarClase('Módulo 3 / Casos Prácticos', '3. Operativa 05_10_26', 'evB7Dc-GAP8', this)">
+                        <span>▶</span> 3. Operativa 05_10_26
                     </li>
-                    <li class="lesson-item" onclick="cambiarClase('Módulo 3 / Casos Prácticos', '4. Backtesting Tradingview pasando prueba de fondeo', 'GYmtjEkLg2Y', this)">
-                        <span>▶</span> 4. Backtesting Tradingview pasando prueba de fondeo
+                    <li class="lesson-item" onclick="cambiarClase('Módulo 3 / Casos Prácticos', '4. Operativa 20 10 26', '_nlMpinfENc', this)">
+                        <span>▶</span> 4. Operativa 20 10 26
                     </li>
-                    <li class="lesson-item" onclick="cambiarClase('Módulo 3 / Casos Prácticos', '5. Operativa 20 10 26', '_nlMpinfENc', this)">
-                        <span>▶</span> 5. Operativa 20 10 26
+                    <li class="lesson-item" onclick="cambiarClase('Módulo 3 / Casos Prácticos', '5. Operativa 21 10 26', 'cygrDLy0HLY', this)">
+                        <span>▶</span> 5. Operativa 21 10 26
                     </li>
-                    <li class="lesson-item" onclick="cambiarClase('Módulo 3 / Casos Prácticos', '6. Operativa 21 10 26', 'cygrDLy0HLY', this)">
-                        <span>▶</span> 6. Operativa 21 10 26
+                    <li class="lesson-item" onclick="cambiarClase('Módulo 3 / Casos Prácticos', '6. Operativa 27 10 26', 'AD_53q2P9-k', this)">
+                        <span>▶</span> 6. Operativa 27 10 26
+                    </li>
+                    <li class="lesson-item" onclick="cambiarClase('Módulo 3 / Casos Prácticos', '7. Operativa 02 11 26', 'uaaQtForH0o', this)">
+                        <span>▶</span> 7. Operativa 02 11 26
+                    </li>
+                    <li class="lesson-item" onclick="cambiarClase('Módulo 3 / Casos Prácticos', '8. Operativa 03 11 26', 'S56NI4dDg5I', this)">
+                        <span>▶</span> 8. Operativa 03 11 26
+                    </li>
+                    <li class="lesson-item" onclick="cambiarClase('Módulo 3 / Casos Prácticos', '9. Operativa 04 11 26', 'aCE9LdjoAV4', this)">
+                        <span>▶</span> 9. Operativa 04 11 26
+                    </li>
+                    <li class="lesson-item" onclick="cambiarClase('Módulo 3 / Casos Prácticos', '10. Operativa 12 11 26', 'gk-4ZXlnPpc', this)">
+                        <span>▶</span> 10. Operativa 12 11 26
                     </li>
                 </ul>
             </div>
-
-        </nav>
-
-        <!-- Panel de Reproducción Derecho -->
-        <main class="content-panel">
-            <div class="content-wrapper">
-                <div class="breadcrumb" id="breadcrumbText">Introducción</div>
-                <h2 class="video-title" id="videoTitle">1. Bienvenida</h2>
-                
-                <div class="video-container">
-                    <iframe id="videoFrame" src="https://www.youtube.com/embed/lVmeYB_KId8" allowfullscreen></iframe>
-                </div>
-            </div>
-        </main>
-
-    </div>
-
-    <script>
-        function cambiarClase(ruta, titulo, videoId, elemento) {
-            document.getElementById('breadcrumbText').innerText = ruta;
-            document.getElementById('videoTitle').innerText = titulo;
-            document.getElementById('videoFrame').src = `https://www.youtube.com/embed/${videoId}`;
-
-            let items = document.querySelectorAll('.lesson-item');
-            items.forEach(i => i.classList.remove('active'));
-            elemento.classList.add('active');
-        }
-    </script>
-
-</body>
-</html>

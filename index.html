@@ -315,3 +315,34 @@
                     </li>
                 </ul>
             </div>
+
+        </nav>
+
+        <!-- Panel de Reproducción Derecho -->
+        <main class="content-panel">
+            <div class="content-wrapper">
+                <div class="breadcrumb" id="breadcrumbText">Introducción</div>
+                <h2 class="video-title" id="videoTitle">1. Bienvenida</h2>
+                
+                <div class="video-container">
+                    <iframe id="videoFrame" src="https://www.youtube.com/embed/lVmeYB_KId8" allowfullscreen></iframe>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <script>
+        function cambiarClase(ruta, titulo, videoId, elemento) {
+            document.getElementById('breadcrumbText').innerText = ruta;
+            document.getElementById('videoTitle').innerText = titulo;
+            document.getElementById('videoFrame').src = `https://www.youtube.com/embed/${videoId}`;
+
+            let items = document.querySelectorAll('.lesson-item');
+            items.forEach(i => i.classList.remove('active'));
+            elemento.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
